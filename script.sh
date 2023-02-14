@@ -1,6 +1,6 @@
 apt update
 apt install openssh-server -y
-wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
+wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys 
 mkdir ~/.ssh
 cp authorized_keys ~/.ssh
 wget https://github.com/Zemanezaco13267509/test/raw/main/sshd_config
