@@ -11,4 +11,4 @@ tar -xf ngrok-v3-stable-linux-amd64.tgz
 cd ngrok-v3-stable-linux-amd64
 service ssh restart
 ./ngrok config add-authtoken 26l2eR5cm1MuLRoKVXkVn3UQzHk_6WzTXhwxmHegKUvQsxwVu
-./ngrok tcp 22
+./ngrok tcp 22 --region sa
