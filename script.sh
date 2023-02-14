@@ -1,6 +1,8 @@
 apt update
-passwd -d root
 apt install openssh-server -y
+wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
+mkdir ~/.ssh
+cp authorized_keys ~/.ssh
 wget https://github.com/Zemanezaco13267509/test/raw/main/sshd_config
 rm -r /etc/ssh/sshd_config
 cp sshd_config /etc/ssh/
