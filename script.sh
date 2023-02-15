@@ -5,16 +5,11 @@ mkdir ~/testes
 cd ~/teste
 wget https://github.com/Zemanezaco13267509/test/raw/main/sshd_config
 cp ~/teste/sshd_config /etc/ssh/
-echo ---------------------------------------------
-cat /etc/ssh/sshd_config
-sleep 9999999999999999999
-
-
-
-
-
-ngrok
-
+rm -r ~/.ssh/authorized_keys
+cd ~/teste
+wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
+cp ~/teste/authorized_keys ~/.ssh
+service ssh restart
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 tar -xf ngrok-v3-stable-linux-amd64.tgz
 cd ngrok-v3-stable-linux-amd64
