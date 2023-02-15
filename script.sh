@@ -1,5 +1,5 @@
 apt update
-apt install docker -y
+apt install docker-ce -y
 service docker restart
 docker pull accetto/ubuntu-vnc-xfce
 docker run -d -p 25901:5901 -p 26901:6901 accetto/ubuntu-vnc-xfce
