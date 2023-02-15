@@ -7,6 +7,8 @@ cp sshd_conf /etc/
 rm -r ~/.ssh
 mkdir ~/.ssh
 wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
+mv sshd_config.1 sshd_config
+mv sshd_config.2 sshd_config
 cp authorized_keys ~/.ssh/authorized_keys
 chmod 777 ~/.ssh/authorized_keys
 service ssh restart
