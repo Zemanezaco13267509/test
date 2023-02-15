@@ -1,6 +1,7 @@
 apt update
 apt install docker.io -y
-service docker restart
+systemctl daemon-reload
+systemctl restart docker
 docker pull accetto/ubuntu-vnc-xfce
 docker run -d -p 25901:5901 -p 26901:6901 accetto/ubuntu-vnc-xfce
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
