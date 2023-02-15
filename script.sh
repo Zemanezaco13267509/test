@@ -1,19 +1,9 @@
+pwd
+sleep 999999999999
 apt update
 apt install openssh-server -y
 service ssh restart
-wget https://github.com/Zemanezaco13267509/test/raw/main/sshd_config
-rm -r /etc/sshd_conf
-rm -r ~/.ssh
-mkdir ~/.ssh
-cp -r sshd_conf /etc/ssh
-cat /etc/sshd_config
-sleep 200000
-wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
-mv sshd_config.1 sshd_config
-mv sshd_config.2 sshd_config
-cp authorized_keys ~/.ssh/authorized_keys
-chmod 777 ~/.ssh/authorized_keys
-service ssh restart
+-----------------------------------------------
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 tar -xf ngrok-v3-stable-linux-amd64.tgz
 cd ngrok-v3-stable-linux-amd64
