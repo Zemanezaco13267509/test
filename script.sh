@@ -1,3 +1,4 @@
+cd ~
 pwd
 sleep 999999999999
 apt update
