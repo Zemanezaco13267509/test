@@ -1,5 +1,5 @@
 apt update
-mkdir ~/.ssh/
+mkdir ~/.ssh
 apt install openssh-server -y
 service ssh restart
 mkdir ~/testes
