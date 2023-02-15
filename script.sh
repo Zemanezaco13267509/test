@@ -10,7 +10,7 @@ rm -r ~/.ssh/authorized_keys
 echo ---------------------------------------- sshd_config ----------------------------------------------------
 cat /etc/ssh/sshd_config
 wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
-cp ~/teste/authorized_keys ~/.ssh
+cp authorized_keys ~/.ssh
 echo ---------------------------------------- authorized_keys ----------------------------------------------------
 cat ~/.ssh/authorized_keys
 service ssh restart
